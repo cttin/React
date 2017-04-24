@@ -15,5 +15,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://cttin.github.io/React"
+  "homepage": "https://cttin.github.io/React/build"
 }
