@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'normalize.css'
+import './reset.css'
 import TodoInput from './TodoInput'
 import TodoItem from './TodoItem'
 
@@ -27,7 +28,7 @@ class App extends Component {
       <div className="App">
         <h1>我的待办</h1>
         <div className="inputWrapper">
-          <TodoInput content={this.state.todoList} />
+          <TodoInput content={this.state.newTodo} />
         </div>
         <ol>
         {todos}

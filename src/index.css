@@ -1,10 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 30px;
-  background: #80d4f6;
-  color: #ffda8e;
-  text-align: center;
-  margin-top: 40vh;
+  background: #ddd;
 }
+
+#root{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}		  
