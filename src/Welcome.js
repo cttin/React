@@ -4,15 +4,6 @@ import React from 'react' // 为什么要 import React
 class Welcome extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			date: new Date(),
-			test: '1'
-		}
-    this.setState({
-      date: new Date(), // 更新 date
-      test: 'constructor'
-    })
-		
 		console.log('我已经在 constructor 里将 props 和 state 初始化好了');
 	}
 	componentWillMount() {
@@ -23,10 +14,6 @@ class Welcome extends React.Component {
 		console.log('运行到这里的话，说明马上就要运行 render 了');
 	}
 	render() {
-		this.setState({
-      date: new Date(), // 更新 date
-      test: 'render'
-    })
 		console.log('嗯，这里是 render');
 		return(
 			<div>
@@ -49,26 +36,17 @@ class Welcome extends React.Component {
     })
 	}
 	shouldComponentUpdate(){
-    this.setState({
-      date: new Date(), // 更新 date
-        test: 'shouldComponentUpdate'
-      })
+    return true;
 	  }
-    componentWillUpdate(){
-      this.setState({
-        date: new Date(), // 更新 date
-        test: 'componentWillUpdate'
-      })
-    }
-    componentDidUpdate(){
-      this.setState({
-        date: new Date(), // 更新 date
-        test: 'componentDidUpdate'
-      })
-    }
-    componentWillUnmount(){
-      console.log('要死了')
-    }
+  componentWillUpdate(){
+     
+  }
+  componentDidUpdate(){
+     
+  }
+  componentWillUnmount(){
+    console.log('要死了')
+  }
 }
 
 // 也可以写成函数形式的组件
